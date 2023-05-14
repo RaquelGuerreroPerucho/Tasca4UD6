@@ -7,21 +7,14 @@ public class Covid {
     {
         if (bodyTemperature>= 38)
         {
-            if(difficultyBreathing ||
-                (difficultyBreathing && diabetes) ||
-                (difficultyBreathing && cancer) ||
-                (difficultyBreathing && isPregnant)||
-                (difficultyBreathing && isOver60yearsold) ||
-                (difficultyBreathing && hepatic)||
-                (difficultyBreathing && kidnevDisease)||
-                (difficultyBreathing && respiratoryDisease)||
-                (diabetes)||
-                (cancer)||
-                (isPregnant)||
-                (isOver60yearsold)||
-                (hepatic)||
-                (respiratoryDisease)||
-                (kidnevDisease))
+            if(difficultyBreathing
+                || (diabetes)
+                || (cancer)
+                || (isPregnant)
+                || (isOver60yearsold)
+                || (hepatic)
+                || (respiratoryDisease)
+                || (kidnevDisease))
             {
                 return "/diagnostico/"+provincia;
             }
